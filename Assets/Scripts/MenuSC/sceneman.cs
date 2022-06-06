@@ -3,9 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class sceneman : MonoBehaviour
 {
+    private void Start()
+    {
+        PlayerPrefs.SetInt("Sonoyun", 1);
+        
+    }
     bool sesdurumu = true;
     public AudioSource aus;
     
@@ -36,4 +42,5 @@ public class sceneman : MonoBehaviour
             
 
     }
+   
 }

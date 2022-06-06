@@ -119,7 +119,7 @@ public class Denemex : MonoBehaviour
         {
             dogru.Play();
             kacinci++;
-            score += 100;
+            score += 150;
             scoretext.text = "Score: " + score.ToString();
             return true;
         }

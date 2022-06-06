@@ -13,6 +13,7 @@ public class Controllr : MonoBehaviour
     public Text TextPuan;
     public int level = 1;
     int yanlisclicksayisi = 0;
+    float puancarpan;
     //float timer = 5f;
 
     public void Awake()
@@ -23,6 +24,7 @@ public class Controllr : MonoBehaviour
 
     public void puanart()
     {
+        
         puan += 100;
         TextPuan.text = puan.ToString();
         

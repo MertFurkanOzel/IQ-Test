@@ -10,7 +10,7 @@ public class Timr : MonoBehaviour
     public Text suretx;
     public Image bar1;
     public Image bar2;
-    float sure;
+    public float sure;
     void Start()
     {
         sure = 60;
@@ -29,9 +29,10 @@ public class Timr : MonoBehaviour
 
         else
         {
+            
             PlayerPrefs.SetInt("oyunskor3", GetComponent<Denemex>().score);
             PlayerPrefs.Save();
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene(1);
         }
             
         bar2.fillAmount = sure / 60;

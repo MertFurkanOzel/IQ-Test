@@ -10,7 +10,7 @@ public class Timer : MonoBehaviour
     public Text suretx;
     public Image bar1;
     public Image bar2;
-    float sure;
+    public float sure;
     void Start()
     {
         sure = 60;
@@ -29,9 +29,10 @@ public class Timer : MonoBehaviour
 
         else
         {
+            
             PlayerPrefs.SetInt("oyunskor2", GetComponent<numpadsc>().score);
             PlayerPrefs.Save();
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(1);
 
         }
             

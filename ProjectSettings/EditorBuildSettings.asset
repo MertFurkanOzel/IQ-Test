@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 96b7e9b2603f03e4293006c4f59e0418
   - enabled: 1
+    path: Assets/Scenes/SahneGecis.unity
+    guid: 71ce0b665f55d6441b048bcdc664a8f0
+  - enabled: 1
     path: Assets/Scenes/Oyun1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -17,6 +20,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Oyun3.unity
     guid: 8573656d71b37f644901f1caa7fe5917
+  - enabled: 1
+    path: Assets/Scenes/Oyun4.unity
+    guid: e2b7c41ac63569542974f29fd59c78ba
+  - enabled: 1
+    path: Assets/Scenes/Oyun5.unity
+    guid: 734d8383898f00949b366d7ca114cd34
   - enabled: 1
     path: Assets/Scenes/Oyunsonu.unity
     guid: 950f5dbcab359af4398a4d337c2f886a

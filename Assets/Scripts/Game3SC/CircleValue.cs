@@ -4,12 +4,20 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using TMPro;
 
-public class CircleValue : MonoBehaviour, IPointerDownHandler
+public class CircleValue : MonoBehaviour, IPointerDownHandler,IPointerEnterHandler, IPointerExitHandler
 {
     public float Value;
-    
-    
-  
+
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        transform.localScale = new Vector3(4, 4, 1);
+    }
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        transform.localScale = new Vector3(3.5f, 3.5f, 4);
+    }
+
     public void OnPointerDown(PointerEventData eventData)
     {
         
@@ -22,10 +30,11 @@ public class CircleValue : MonoBehaviour, IPointerDownHandler
 
         }
 
-        if (GameObject.Find("Canvas").transform.childCount == 5) { GameObject.Find("GameObject").GetComponent<Denemex>().gencircle(6); }
+        if (GameObject.Find("Canvas").transform.childCount == 7) { GameObject.Find("GameObject").GetComponent<Denemex>().gencircle(6); }
          
             
     }
+    
 }
 
 

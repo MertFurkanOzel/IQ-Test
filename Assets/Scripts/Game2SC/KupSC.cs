@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class KupSC : MonoBehaviour
 {
-    int[] katsayisi = new int[16];
+    int[] katsayisi;
     Vector3 anavector;
     int a;
     public GameObject mavi;
@@ -90,7 +90,12 @@ public class KupSC : MonoBehaviour
 
     public void generate()
     {
-        int randomsayi = Random.Range(6, 15);
+        katsayisi = new int[16];
+        foreach (Transform child in transform)
+        {
+            Destroy(child.gameObject);
+        }
+        int randomsayi = Random.Range(5, 15);
         asd.Clear();
         int mod;
         float x = 0, y = 0;
@@ -108,7 +113,7 @@ public class KupSC : MonoBehaviour
             //if (asd.Contains(a))
             //    katsayisi[a] += 1;
             //else
-            asd.Add(a);
+               asd.Add(a);
 
 
 
